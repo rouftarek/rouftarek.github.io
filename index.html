@@ -1,13 +1,366 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-    <a href="test.html">test</a>
-</body>
-</html>
+<!doctype html>
+<html>
 
+    <head>
+         <meta charset="utf-8" />
+   		 <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+   		 <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+        <Title>Rouf Tarek</Title>
+        <style>
+        
+            hrml{
+                margin: 0;
+                padding: 0;
+            }
+            
+            body{
+                
+                font-family: 'Handlee', cursive;
+                font-size: 13pt;
+                background-color: #efefef;
+                padding: 10px;
+                margin: 0;
+            }
+            
+            h1{
+                
+                font-size: 15pt;
+                color: #20bcd5;
+                text-align: center;
+                padding: 0 0 10px 0;
+                margin: 0 0 10px 0;
+            }
+            
+            h1 span{
+                
+                border: 4px dashed #20bcd5;
+                padding: 10px;
+            }
+            
+            p{
+                padding: 0;
+                margin: 0;
+            }
+            
+            .img-circle{
+                height: 200px;
+                border: 3px solid white;
+                border-radius: 50%;
+                
+                
+            }
+            
+            .section{
+                background-color: white;
+                padding: 15px;
+                margin-bottom: 10px;
+                border-radius: 10px;
+                
+            }
+            
+            #header{
+                
+                background-image: url(img/1.jpg);
+                background-size: cover;
+                
+            }
+            
+            #header img{
+                display: block;
+                width:100px;
+                height: 100px;
+                margin: auto;
+            }
+            
+            #header p{
+                
+                font-size: 25pt;
+                color: #20BCD5;
+                padding-top: 5px;
+                font-weight: bold;
+                text-align: center;
+                
+            }
+            
+            .quote{
+                
+                font-size: 12pt;
+                text-align: right;
+                margin-top: 10px;
+                
+            }
+            
+            table{
+                width: 100%;
+            }
+            
+            table, th, td{
+                border: 2px solid #cecece;
+                border-collapse: collapse;
+                text-align: center;
+                table-layout:fixed;
+                
+            }
+            
+            .selected{
+                font-weight: bold;
+                color: white;
+                background-color: #f36f48;
+            }
+            
+            
+            progress{
+                
+                width: 70%;
+                height: 20px;
+                color: #3FB6B2;
+                background: #EFEFEF;
+            }
+            
+             progress::-webkit-progress-bar {
+                
+                background: #efefef;
+            }
+            
+            progress::-webkit-progress-value {
+                
+                background: #3fb6b2;
+            } 
+            
+            progress::-moz-progress-bar {
+                
+                color: #3fb6b2;
+                background: #efefef;
+            }
+            
+            iframe {
+                display:contents;
+                margin: 2px auto;
+            }
+            
+            form{
+                text-align: center;
+                margin-top: 0;
+            }
+            
+            .submit{
+                background-color: #3fb6b2;
+                padding: 12px 45px;
+                border-radius: 5px;
+                cursor:pointer;
+                color:#ffffff;
+                outline: none;
+                margin: none;
+                font-weight: bold;
+            }
+            
+            .submit:hover{
+                background-color: #43a09d;
+            }
+            
+            textarea{
+                height: 100px;
+            }
+            
+            input, textarea{
+                margin-bottom: 10px;
+                font-size:11pt;
+                padding:15px 10px 10px;
+                border:1px solid #cecece;
+                background-color: #efefef;
+                color:#787575;
+                border-radius:5px;
+                width:70%;
+                outline: none;
+            }
+            
+            .face{
+                transform:scale(0.7);
+                margin:0 auto;
+                display:block;
+            }
+            #contacts img{
+                height: 50px;
+                width: 50px;
+                margin: 10px 7px 0 7px;
+                
+            }
+            
+            #contacts a{
+                text-decoration: none;
+                
+            }
+            
+            #contacts img:hover{
+                opacity: 0.8;
+            }
+            
+            #contacts{
+                text-align: center;
+            }
+            
+            .copyright{
+                font-size: 8pt;
+                text-align:right;
+                padding-bottom: 10px;
+                color: gray;
+                
+            }
+        
+            
+            
+        
+        </style>
+        <link rel="icon" href="img/favicon.ico">
+        
+    </head>
+    
+    <body>
+    
+       <div id="header" class="section">
+        
+           <img alt="Abdur Rouf Tarek" class="img-circle" src="img/0.jpg">
+           <p> Abdur Rouf Tarek</p>
+           
+        </div>
+    
+        <div class="section">
+        
+            <h1><span>About Me</span></h1>
+            <p>
+            
+                Hey, I am <strong>Tarek</strong>.I am a web developer. I recently finished my 4 year Diploma in Engineering course in Computer technology.
+            </p>
+            <p class="Quote">"Declare a variables, not a war"</p>
+            
+        </div>
+        
+        <div class="section">
+        
+            <h1><span>Educational Qualification</span></h1>
+            <table>
+            
+                <tr class="selected">
+                
+                    <td>Serial</td>
+                    <td>Degree</td>
+                    <td>Subject / Course</td>
+                    <td>Institute</td>
+                    <td>Passing Year</td>
+                    <td>Result</td>
+                    
+                </tr>
+                <tr>
+                
+                    <td>1</td>
+                    <td>S.S.C.</td>
+                    <td>Science</td>
+                    <td>Central Jainta High School</td>
+                    <td>2013</td>
+                    <td>4.44</td>
+                    
+                </tr>
+            
+                <tr>
+                
+                    <td>2</td>
+                    <td>Diploma In Engineering</td>
+                    <td>Computer</td>
+                    <td>Sylhet Polytecnic Institute</td>
+                    <td>2018</td>
+                    <td>n/a</td>
+                    
+                </tr>
+            
+            
+            </table>
+        
+        </div>
+        
+        <div class="section">
+        
+            <h1><span>My Skills</span></h1>
+            <ul>
+            
+                <li>HTML <br/>
+                    <progress min="0" max="100" value="90"></progress>
+                
+                </li>
+                <li>CSS <br/>
+                    <progress min="0" max="100" value="80"></progress>
+                </li>
+                <li>Javacript <br/>
+                    <progress min="0" max="100" value="40"></progress>
+                </li>
+            </ul>
+        
+        </div>
+        
+        <div class="section">
+        
+            <h1><span>My Media</span></h1>
+            <iframe height="400 px" width="400 px" src="img/2.jpg" allowfullscreen framebroder="0"></iframe>
+            <iframe height="400 px" width="400 px" src="img/3.jpg" allowfullscreen framebroder="0"></iframe>
+            <iframe height="400 px" width="400 px" src="img/4.jpg" allowfullscreen framebroder="0"></iframe>
+            <iframe height="400 px" width="400 px" src="img/5.jpg" allowfullscreen framebroder="0"></iframe>
+            
+        </div>
+        
+        <div class="section">
+        
+            <h1><span>Contact Me</span></h1>
+            <svg class="face" height="100" width="100">
+            
+                <circle cx="50" cy="50" r="50" fill="#FDD835"/>
+                <circle cx="30" cy="30" r="10" fill="#FFFFFF"/>
+                <circle cx="70" cy="30" r="10" fill="#FFFFFF"/>
+                <circle cx="30" cy="30" r="5" fill="#000000"/>
+                <circle cx="70" cy="30" r="5" fill="#000000"/>
+                <path d="M 30 70 q 20 20 40 0" stroke="#FFFFFF" stroke-width="5"  fill="none"/>
+                
+            </svg>
+            <form>
+            
+                <input name="name" placeholder="Name" type="text" required>
+                <input name="email" placeholder="Email" type="email" required>
+                <textarea name="message" placeholder="Message" required ></textarea>
+                <input id="submitButton" type="submit" value="SEND" class="submit">
+                
+            </form>
+            
+        </div>
+        
+        <div class="section" id="contacts">
+        
+            <h1><span>Follow Me</span></h1>
+            <div>
+            
+                <a href="https://www.facebook.com/rouftarek" target="_blank"><img alt="Facebook" src="img/facebook.png"></a>
+                <a href="https://www.instagram.com/rouftarek" target="_blank"><img alt="Instagram" src="img/instagram.png"></a>
+                <a href="https://www.twitter.com/rouf_tarek" target="_blank"><img alt="facebook" src="img/twitter.png"></a>
+                
+            </div>
+            
+        </div>
+        
+        <div class="copyright">
+        
+            &copy; 2018 Abdur Rouf Tarek. All right reserved.
+            
+        </div>
+        
+        <script>
+        
+            document.getElementById("submitButton").onclick = function(){
+                
+                window.location.href="http://www.facebook.com/rouftarek";
+            }
+            
+        </script>
+        
+    </body>
+
+</html>
