@@ -8,7 +8,7 @@ main{
     width: 375px;
     height: 500px;
 }
-main>div{
+.flexbox{
     position: relative;
     top: 30%;
     display: flex;
