@@ -1,8 +1,99 @@
 html{
     font-family: 'Red Hat Display', sans-serif;
 }
+body{
+    background-color:hsl(225, 100%, 94%);
+}
 main{
  height: 100vh;
  width: 100vw;  
- background-color:  hsl(17, 86%, 46%); 
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+}
+.card{
+    background-color: white;
+    width: 290px;
+    height: max-content;
+    text-align: center;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-div{
+}
+.hero-img{
+    width: 290px;
+    height: auto;
+}
+h1{
+    margin: 0;
+    padding-top: 25px;
+    font-weight: bolder;
+    color: hsl(223, 47%, 23%);
+}
+.hero-text{
+    color: hsl(224, 23%, 55%);
+    font-size: 14px;
+    padding: 0px 25px;
+    line-height: 1.4rem;
+}
+.price-option{
+    background-color:hsl(225, 100%, 98%)    ;
+    margin: 0px 25px;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 15px;
+}
+.price-option > img{
+    width: auto;
+    height: 50px;
+}
+.price-option > p{
+    font-weight: 400;
+    font-size: 14px;
+    color: hsl(224, 23%, 55%);
+}
+.price-option > p > span{
+    font-weight: 700;
+    color: hsl(223, 47%, 23%)
+}
+.price-option > button{
+    border: none;
+    background: none;
+    text-decoration: underline;
+    font-weight: bold;
+    color: hsl(245, 75%, 52%);
+    font-size: 14px;
+}
+.end-buttons{
+margin: 0 25px;
+}
+.payment{
+    color: white;
+    background-color: hsl(245, 75%, 52%);
+    display: block;
+    width: 240px;
+    padding: 15px;
+    border: none;
+    border-radius: 15px;
+    font-weight: bold;
+}
+.cancel{
+    color: hsl(224, 23%, 55%);
+    background:none;
+    display: block;
+    width: 240px;
+    padding: 15px;
+    border: none;
+    border-radius: 15px;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
