@@ -1,0 +1,140 @@
+:root{
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+
+    --Very-dark-blue-main-BG: hsl(217, 54%, 11%);
+    --very-dark-blue-card-BG: hsl(216, 50%, 16%);
+    --very-dark-blue-line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+
+
+} 
+html{
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--Very-dark-blue-main-BG);
+    font-size: 10px;
+    color: var(--white);
+}
+body{
+    
+}
+main{
+    height: 100vh;
+    width: 100vw;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.card{
+    background-color: var(--very-dark-blue-card-BG);
+    padding: 2rem;
+    border-radius: 1.8rem;
+    width: 300px;
+    height: max-content;
+}
+figure{
+    margin: 0;    
+    border-radius: 1.6rem;
+    padding: 0;
+    background-color: aqua;
+
+}
+figure:hover{
+    opacity: ;
+    background-image: url(./images/icon-view.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hero-img{
+    width: 300px;
+    height: auto;
+    border-radius: 1.6rem;
+    cursor: pointer;
+}
+.hero-img:hover{
+    opacity: 0.5;
+}
+h1{
+    font-size: 1.8rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+h1:hover{
+    color: var(--cyan);
+}
+.hero-text{
+    font-size: 1.4rem;
+    color: var(--soft-blue);
+    font-weight: 300;
+}
+.eth-date{
+    display: flex;
+    justify-content: space-between;
+    flex-direction:row ;
+
+}
+.eth{
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+.eth > img{
+    height: 1.8rem;
+    padding-right: 1rem;
+}
+.eth > p{
+    font-size: 1.4rem;
+    color: var(--cyan);
+    font-weight: 400;
+
+}
+.date{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.date>img{
+    
+    height: 1.4rem;
+}
+.date>p{
+    color: var(--soft-blue);
+    padding-left: 1rem;
+    font-size: 1.4rem;
+    font-weight: 300;
+
+}
+hr{
+    color: var(--very-dark-blue-line);
+    border: 0.1rem solid var(--very-dark-blue-line);
+}
+
+.creator{
+    display: flex;
+    align-items: center;
+}
+.creator>img{
+    height: 3rem;
+    width: auto;
+    border-radius: 50%;
+    border: .1rem solid var(--white);
+}
+
+.creator>p{
+    font-size: 1.4rem;
+    font-weight: 300;
+    padding-left: 1.4rem;
+    color: var(--soft-blue);
+}
+.creator>p>span{
+    font-weight: 400;
+    color: var(--white);
+}
+.creator>p>span:hover{
+color: var(--cyan);
+cursor: pointer;
+
+}
