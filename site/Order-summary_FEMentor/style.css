@@ -3,6 +3,23 @@ html{
 }
 body{
     background-color:hsl(225, 100%, 94%);
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+@media screen and (max-width:480px) {
+    body{
+        background-color:hsl(225, 100%, 94%);
+        background-image: url(./images/pattern-background-mobile.svg);
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+}
+a {
+    cursor: pointer;
 }
 main{
     height: 100vh;
@@ -72,6 +89,7 @@ h1{
     font-weight: bold;
     color: hsl(245, 75%, 52%);
     font-size: 14px;
+    cursor: pointer;
 }
 .end-buttons{
 margin: 0 25px;
@@ -84,7 +102,11 @@ margin: 0 25px;
     padding: 15px;
     border: none;
     border-radius: 15px;
-    font-weight: bold;
+    font-weight: bold;    
+}
+.payment:hover{
+    cursor: pointer;
+    background-color: hsla(245, 78%, 79%, 1);
 }
 .cancel{
     color: hsl(224, 23%, 55%);
@@ -96,4 +118,15 @@ margin: 0 25px;
     border-radius: 15px;
     font-weight: bold;
     margin-bottom: 10px;
+}
+.cancel:hover{
+    cursor: pointer;
+}
+
+.attribution{ 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
 }
