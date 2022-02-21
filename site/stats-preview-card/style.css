@@ -1,0 +1,143 @@
+:root{
+--main-bg:hsl(233, 47%, 7%);    /*Very dark blue (main background)*/
+--card-bg:hsl(244, 38%, 16%);   /*Dark desaturated blue (card background) */
+--accent:hsl(277, 64%, 61%);    /*Soft violet (accent)*/
+--main-heading-stats:hsl(0, 0%, 100%);  /*White (main heading, stats)*/
+--main-para:hsla(0, 0%, 100%, 0.75);    /*Slightly transparent white (main paragraph)*/
+--stat-heading:hsla(0, 0%, 100%, 0.6);  /*Slightly transparent white (stat headings)*/
+}
+html{
+    font-family: 'Inter', sans-serif;
+    font-family: 'Lexend Deca', sans-serif;   
+    font-size: 10px; 
+}
+body{
+    background-color: var(--main-bg);
+    color: white;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+a{
+    cursor: pointer;
+}
+main{
+
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .8rem;
+    background-color: var(--card-bg);
+}
+
+.card{
+    flex: 1;
+    z-index: 1;
+    width: 30rem;
+    height: 20rem;
+    padding: 3.2rem 4rem;    
+}
+h1{
+    font-size: 2.5rem;
+    margin: 0%;
+    color: var(--main-heading-stats);    
+    font-family: 'Inter', sans-serif;
+
+}
+h1>span{
+    color: var(--accent);
+}
+.main-para{
+    color: var(--main-para);
+    font-size: 1.2rem;
+    font-family: 'Inter', sans-serif;
+    padding-bottom: 2rem;
+}
+.stats{
+    display: flex;
+    align-items: center;
+    text-transform: uppercase ;
+}
+.stats>p{
+    color: var(--stat-heading);
+    padding-right: 5rem;
+}
+.stats>p>span{
+    color: var(--main-heading-stats);
+    font-size: 1.7rem;
+    font-weight: bold;
+    font-family: 'Inter', sans-serif;
+
+}
+figure{
+    flex:1;
+    margin: 0;
+    padding: 0;
+    width: 30rem;
+    background-color: var(--accent);
+    border-radius: 0 .8rem .8rem 0;
+}
+img{
+    margin: 0;
+    padding: 0;
+    width: 30rem;
+    height: 26.4rem;
+    opacity: .5;
+    border-radius: 0 .8rem .8rem 0;
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+@media screen and (max-width:480px) {
+    section{
+        flex-direction: column-reverse;
+    }
+    .card{
+        width: 30rem;
+        height: auto;
+        padding: auto;
+    }
+    figure{
+        align-self: baseline;
+        width: 40rem;
+        height: auto;
+        border-radius: .8rem .8rem 0rem 0rem;
+
+    }
+    img{
+        width: inherit;
+        height: inherit;
+        border-radius: .8rem .8rem 0rem 0rem;
+
+    }
+    h1{
+        text-align: center;
+        font-size: 3rem;
+    }
+    .main-para{
+        text-align: center;
+        line-height: 2;
+        font-size: 1.7rem;
+    }
+    .stats{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .stats>p{
+        font-size: 1.6rem;
+    }
+    .stats>p>span{
+        font-size: 2.5rem;
+    }
+}
