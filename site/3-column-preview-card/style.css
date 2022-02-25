@@ -1,0 +1,121 @@
+:root{
+    --big-shoulder-display:'Big Shoulders Display', cursive;
+    --lexend-deca:'Lexend Deca', sans-serif;
+    /*primary color*/
+    --orange:hsl(31, 77%, 52%);
+    --cyan:hsl(184, 100%, 22%);
+    --dark-cyan:hsl(179, 100%, 13%);
+    /*Neutral color*/
+    --paragraph:hsla(0, 0%, 100%, 0.75);
+    --bg-head-btn:hsl(0, 0%, 95%);
+}
+
+html{
+    font-size: 10px;
+    font-family: var(--lexend-deca);
+}
+main{
+    height: 95vh;
+    width: 98vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    box-sizing: border-box;
+}
+.card{
+    width: 14vw;
+    height: 50vh;
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.sedans{
+    background-color: var(--orange);
+    border-radius: 1rem 0rem 0rem 1rem;
+}
+.sedans > button{
+    color: var(--orange);
+}
+.suvs{
+    background-color: var(--cyan);
+}
+.suvs > button{
+    color: var(--cyan);
+}
+.luxury{
+    background-color: var(--dark-cyan);
+    border-radius: 0rem 1rem 1rem 0rem;
+}
+.luxury > button{
+    color: var(--dark-cyan);
+}
+img{
+    width: 8vh;
+    height: auto;
+}
+h1{
+    margin: 0%;
+    font-family: var(--big-shoulder-display);
+    color: var(--bg-head-btn);
+    text-transform: uppercase;
+    font-size: 4rem;
+}
+p{
+    color: var(--paragraph);
+    line-height: 1.5;
+    font-size: 2rem;
+}
+button{
+    font-family: var(--lexend-deca);
+    background-color: var(--bg-head-btn);
+    border: 1px solid var(--bg-head-btn);
+    border-radius: 5rem;
+    padding:  1rem 2rem;
+    width: max-content;
+    align-self:flex-start;
+}
+button:hover{
+    background-color: transparent;
+    color: var(--bg-head-btn);
+}
+
+@media (max-width:992px) {
+    .card{
+        width: 18vw;
+    }
+    p{
+        font-size: 1.8rem;
+    }
+}
+@media (max-width:768px) {
+    
+    main{
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+    }.card{
+        height: 80hv;
+        width: 50vw;
+    }
+    p{
+        font-size: 1.8rem;
+    }
+    .sedans{
+        border-radius: 1rem 1rem 0rem 0rem;
+    }
+    .luxury{
+        border-radius: 0rem 0rem 1rem 1rem;
+    }
+}
+
+
+.attribution { 
+    font-size: 1.5rem; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
